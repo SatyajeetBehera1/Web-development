@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu:ital@1&display=swap" rel="stylesheet"> 
+
+    <title>Float and Clear</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(180, 180, 219);
+            font-family: 'Sansita Swashed', cursive;
+        }
+        .container{
+            border: 3px solid gold;
+            border-radius: 15px;
+            width: 508px;
+            background-color: rgb(121, 189, 121);
+            margin: 33px auto ;
+        }
+        .items{
+            border: 3px solid violet;
+            border-radius: 15px;
+            padding: 12px 3px;
+            margin: 12px 3px;
+            /* background-color: aqua; */
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+            margin-left: 7px;
+            background-image: url("https://source.unsplash.com/user/erondu/250x250")
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #Stationary{
+            clear: left;
+            /* float: left; */
+            width: 99%;
+        }
+        p{
+            text-align: justify;
+            text-align: left;
+            text-align: right;
+            text-align: center;
+        }
+        h1{
+            margin-left: 100px;
+            /* width:500px;  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To My Store</h1>
+        <div id="fruit" class="items">
+        <h3 style="color: blue;">Fruits</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, placeat fugit. Maxime ratione aliquam maiores perferendis sed, sapiente voluptates expedita voluptatem omnis nostrum mollitia laboriosam praesentium excepturi nemo illo earum.</p>
+        </div>
+        <div id="computer" class="items">
+            <h3 style="color: blue;">Computers</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, placeat fugit. Maxime ratione aliquam maiores perferendis sed, sapiente voluptates expedita voluptatem omnis nostrum mollitia laboriosam praesentium excepturi nemo illo earum.</p>
+        </div>
+        <div id="Stationary" class="items">
+            <h3 style="color: blue;">stationary</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, placeat fugit. Maxime atione aliquam maiores perferendis sed, sapiente voluptates expedita voluptatem omnis ostrum mollitia laboriosam praesentium excepturi nemo illo earum.<p>
+        </div>
+    </div>
+</body>
+</html>

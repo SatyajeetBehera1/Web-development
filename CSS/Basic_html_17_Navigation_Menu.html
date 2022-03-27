@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .navbar{
+            background-color: blue;
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px; 
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none; 
+            color: aliceblue;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border-radius: 30px;
+            border-color: black;
+        }
+        .navbar a:hover{
+            color: crimson;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://yahoo.com">Yahoo</a></li>
+                <li><a href="https://instagram.com">instagram</a></li>
+                <li><a href="https://linkedin.com">linkedin</a></li>
+                <li><a href="https://google.com">google</a></li>
+                <div class="search"> 
+                    <input type="text" name="Search" id="search" placeholder="Search the website">
+                </div>
+            </ui>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,57 @@
+p{
+    color: hotpink;
+    background-color: blue;
+}
+
+
+
+#fast{
+    background-color: blue;
+    height: 100px;
+    width: 600px;
+    border-color: rgb(206, 128, 12);
+    border-width: 7px;
+    border-style: solid;
+    border-radius: 30px;
+} 
+
+
+#second{
+    background-color: blue;
+    height: 100px;
+    width: 600px;
+    border: 10px solid greenyellow;
+    /* border-width: 70px;
+    border-style: solid; */
+    border-radius: 30px 112px 45px 50px;
+} 
+
+
+#third{
+ background-color: rgb(58, 243, 98);
+     height: 100px;
+     width:455px; 
+     border-top: 10px solid rgb(231, 22, 231);
+     border-right: 2px solid rgb(18, 10, 133);
+     border-bottom: 2px solid rgba(9, 144, 27, 0.774);
+     border-left: 2px solid rgb(156, 42, 13);
+     border-top-left-radius: 4px;
+     border-top-right-radius: 14px;
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 24px;
+}
+
+
+#fourth{
+    background-color: #29deeb;
+    height: 250px;
+    width: 250px;
+    border-color: rgb(206, 128, 12);
+    background-image: url(https://source.unsplash.com/user/erondu/200x200);
+    background-repeat: no-repeat;
+    /* background-position: 500px 600px; */
+    background-position: center;
+    border-width: 7px;
+    border-style: solid;
+    border-radius: 30px;
+} 
