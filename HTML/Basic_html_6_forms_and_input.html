@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <h2>This is a simple HTML form</h2>
+    <form action="Backend.php">
+        <label for="name">Name</label>
+        <!-- label are used if we click on the heading then we can write text directly in the box/ -->
+        <div>
+            <input type="text" name="MyName" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="MyRole" id="role">
+        </div>
+        <br>
+        <label for="email">Email id</label>
+        <div>
+            <input type="email" name="MyEmail" id="Email">
+        </div>
+        <br>
+        <label for="bonus">Bonus in lakhs</label>
+        <div>
+            <input type="number" name="MyNumber" id="bonus">
+        </div>
+        <br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="Date" id="date">
+        </div>
+        <br>
+        <label for="eligible">Are you eligible</label>
+        <div>
+            <input type="checkbox" name="MyEligible" id="eligible">
+        </div>
+        <br>
+        <label for="gernder">Gender</label>
+        <div>
+           Male <input type="radio" name="MyGender" id="gender">FeMale <input type="radio" name="MyGender" id="gender">Other <input type="radio" name="MyGender" id="gender">
+        </div>
+        <br>
+        <label for="about">About Yourself</label>
+        <div>
+            <br> <textarea name="MyText" cols="45" rows="9" id="about"></textarea>>
+        </div>
+        <br>
+        <div>
+            <label for="Car">Car</label>
+            <select name="Mycar" id="Car">
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+        <input type="submit" value="sumbit now">
+        <input type="reset" value="reset now">
+        </div>
+    </form>
+</body>
+</html>
