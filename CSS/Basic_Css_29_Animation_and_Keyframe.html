@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframe</title>
+    <style>
+        .container{
+            background-color: red;
+        }
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: satya;
+            animation-name: satya2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            /* in animation-fill-mode: forwards; ya wahi par rok daga jasa oo animation complet hoga ka baad dekhta */
+            
+            animation-fill-mode: alternate;
+            /* in animation-fill-mode: alternate; ma animation pura complet honka baad usahe ajaga jasa oo phala tha  */
+
+            /* animation-timing-function: ease-in; */
+            /* in animation-timing-function: ease-in; animation in the biggning go slow then increaser its speed  */
+
+            /* animation-timing-function: ease-in-out; */
+            /* in animation-timing-function: ease-in; animation in the biggning go fast then decreases its speed  */
+
+            /* animation-delay:3s; */
+            /* in this animation-delay:3s; it will wait 3s then it will start the animation .it will wait the entered second by the user */
+
+            /* animation-direction: reverse; */
+            /* in animation-direction: reverse; it will reverse the animation direction */
+             
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+            /* animation: satay 5s ease-in 1s 12 backwards; */
+        }
+        @keyframes satya {
+            from{
+                width: 250px;
+            }
+            to{
+                width: 700px;
+            }
+        }
+
+        @keyframes satya2 {
+            0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+</body>
+</html>

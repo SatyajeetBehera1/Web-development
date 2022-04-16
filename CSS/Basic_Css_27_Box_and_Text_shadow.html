@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+            
+            border: 2px solid gold;
+            box-shadow: red;
+            padding:10px;
+            margin: 2px 8px;
+            /* box-shadow:5px 5px rgb(247, 226, 108);
+            in this box-shadow:5px-in x-axis 5px-in y-axis rgb(247, 226, 108)-shadow color; */
+            /* box-shadow:5px 5px 5px rgb(247, 226, 108);
+            in this box-shadow:5px-in x-axis 5px-in y-axis 5px-blur rgb(247, 226, 108)-shadow color; */
+            box-shadow:5px 5px 5px rgb(247, 226, 108);
+            /* box-shadow:-5px -5px -5px rgb(247, 226, 108);
+            in this box-shadow:-5px-in negative x-axis -5px-in negtive y-axis 5px-blur rgb(247, 226, 108)-shadow color; */
+            /* box-shadow:5px 5px 5px 5px rgb(247, 226, 108);
+            in this box-shadow:5px-in x-axis 5px-in y-axis 5px-blur 5px-spreadind rgb(247, 226, 108)-shadow color; */
+            box-shadow:inset 3px 10px greenyellow ;
+            /* in this box-shadow:inset 3px 10px greenyellow ; it help us to give shadow inside the box */
+        
+            box-shadow: 3px 5px green, 4px 6px red;
+            /* box-shadow: 3px 5px green, 4px 6px red; is for multiple box shadow  */
+        } 
+        h2{
+            text-shadow: 3px 3px gray;
+            /* in this text-shadow:5px-in x-axis 5px-in y-axis rgb(247, 226, 108)-shadow color; */ 
+            /* box-shadow:5px 5px 5px rgb(247, 226, 108);
+            in this box-shadow:5px-in x-axis 5px-in y-axis 5px-blur rgb(247, 226, 108)-shadow color; */
+            /* box-shadow:-5px -5px -5px rgb(247, 226, 108);
+            in this box-shadow:-5px-in negative x-axis -5px-in negtive y-axis 5px-blur rgb(247, 226, 108)-shadow color; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box- 1">
+            <h2>This is shadow</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquid earum provident maiores vel
+                corporis doloribus excepturi, voluptatem esse modi delectus quos neque culpa ab eligendi praesentium
+                nisi, assumenda dolorem?</p>
+        </div>
+        <div class="box" id="box- 2">
+            <h2>This is shadow</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquid earum provident maiores vel
+                corporis doloribus excepturi, voluptatem esse modi delectus quos neque culpa ab eligendi praesentium
+                nisi, assumenda dolorem?</p>
+        </div>
+        <div class="box" id="box- 3">
+            <h2>This is shadow</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquid earum provident maiores vel
+                corporis doloribus excepturi, voluptatem esse modi delectus quos neque culpa ab eligendi praesentium
+                nisi, assumenda dolorem?</p>
+        </div>
+    </div>
+</body>
+</html>
+
+   

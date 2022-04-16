@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em, rem _ eh, ew</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            border: 2px solid rgb(255, 99, 71);
+            height: 100vh;
+            width: 100vw;
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            font-size:3em;
+            /* in the above container we define font size 10px so in the first font size will be 10*3=30 and it basically depends on the size we define in the parent or in this case it first parent will be container if we not define size in the container it will take by defult size that is set by browser */
+            /* ex:-if we define font size 20 in the container then and in the first if we define container size is 4 then display font size will be 20*4=80px */
+            /* ex:-if we define font size 20 in the container then and in the first if we define container size is 1 then display font size will be 20*1=20px */
+            /* if we don't define size in the container then it will take by defult size that written in the browser */
+            padding: 3em;
+            /* if we do padding so the paddint px will be font size in px that will display * padding size(in em) for example in this font size is 3em and in the container font size is 10px so padding that will apply will be font size that will display = 30px and padding will be 30*3=90 so padding will be 90px  */
+        }
+
+
+        #second{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is the first paragrapgh</h1>
+        <h1 id="second">This is the second paragrapgh</h1>
+        <h1 id="third">This is the third paragrapgh</h1>
+        <h1 id="fourth">This is the fourth paragrapgh</h1>
+    </div>
+</body>
+</html>
