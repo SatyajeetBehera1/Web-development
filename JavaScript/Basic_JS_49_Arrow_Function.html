@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        // function greet() {
+        //     console.log("Hello World");
+        // }
+
+        let greet = () => {
+            console.log("Hello World")
+        }
+        greet();
+
+        setTimeout(() => {
+            console.log("We are inside steTimeout");
+        }, 3000);
+
+        // let sum =(a , b)=>{
+        //     return a+ b;
+        // }
+
+        // this is the shortcut
+        // let sum =(a , b)=>a+ b;
+
+        // let half = a=>a/2;
+        // if there is a single variable then their is no need of bracket in arrow function 
+        
+        // var greeting = " Good Morning";
+        // let obj1 = {
+        //     name: ["Satya", "Guru", "Mayank", "Divya", "shivani", "Animesh"],
+        //     greeting : " Good Morning",
+        //     speak() {
+        //         this.name.forEach(function s(student) {
+        //             console.log("Hello " + student+this.greeting);
+        //         });
+        //     }
+        // }
+
+        let obj1 = {
+            name: ["Satya", "Guru", "Mayank", "Divya", "shivani", "Animesh"],
+            greeting : " Good Morning",
+            speak() {
+                
+                this.name.forEach((student) =>{
+                    console.log("Hello " + student+this.greeting);
+                });
+            }
+        }
+        obj1.speak()
+
+    </script>
+</body>
+
+</html>
