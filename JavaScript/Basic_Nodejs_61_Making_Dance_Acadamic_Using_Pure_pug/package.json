@@ -1,0 +1,21 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "using-pug",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "by-watching-code-with-harry"
+  ],
+  "author": "satyajeet",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "nodemon": "^2.0.18",
+    "pug": "^3.0.2"
+  }
+}
