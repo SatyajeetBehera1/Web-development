@@ -6,7 +6,7 @@ var mongoose = require("mongoose");
 mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true});
 const bodyparser = require("body-parser")
 const port = 80;
-
+ 
 //EXPRESS SPECIFIC STUFF
 // app.use(express.static('static',Options));
 app.use('/static',express.static('static')); // For serving static files
